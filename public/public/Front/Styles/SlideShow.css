@@ -1,0 +1,105 @@
+﻿/*--Main Container--*/
+.main_view
+{
+    float: left;
+    position: relative;
+}
+/*--Window/Masking Styles--*/
+.window
+{
+    height: 238px;
+    width: 958px;
+    overflow: hidden; /*--Hides anything outside of the set width/height--*/
+    position: relative;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -khtml-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border: 1px solid #C6C5C5;
+}
+.image_reel
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.image_reel img
+{
+    border: 0;
+    float: left;
+    width: 958px;
+    height: 238px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -khtml-border-radius: 5px;
+    -webkit-border-radius: 5px;   
+}
+
+.image_reel div
+{
+    float: left;
+    width: 958px;
+    height: 238px;
+}
+
+/*--Paging Styles--*/
+.paging
+{
+    position: absolute;
+    bottom: 20px;
+    right: -7px;
+    width: 178px;
+    height: 47px;
+    z-index: 100; /*--Assures the paging stays on the top layer--*/
+    text-align: center;
+    line-height: 40px;
+    background: url(../Images/Design/paging-bg.png) no-repeat;
+    display: none; /*--Hidden by default, will be later shown with jQuery--*/
+}
+.paging a
+{
+    padding: 5px;
+    text-decoration: none;
+    color: #fff;
+}
+.paging a.active
+{
+    font-weight: bold;
+    background: #F39035;
+    border: 1px solid #BD1C12;
+    -moz-border-radius: 3px;
+    -khtml-border-radius: 3px;
+    -webkit-border-radius: 3px;
+}
+.paging a:hover
+{
+    font-weight: bold;
+}
+
+.boxtext
+{
+    height: 40px;
+    width: 958px;
+    background-image: url('../Images/Design/transparent-bg.png');
+    text-align: left;
+    vertical-align: middle;
+    position: absolute;
+    font-size: large;
+    z-index: 90;
+    float: left;
+    top: 190px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.boxtext a
+{
+    color: White;
+    text-align: left;
+    vertical-align: middle;
+    text-decoration: none;
+    padding-left: 15px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
